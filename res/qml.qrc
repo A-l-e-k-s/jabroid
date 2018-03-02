@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="main.qml">../qml/main.qml</file>
+        <file alias="ContactsForm.ui.qml">../qml/ContactsForm.ui.qml</file>
+        <file alias="ChatsForm.ui.qml">../qml/ChatsForm.ui.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file alias="LastChatForm.ui.qml">../qml/LastChatForm.ui.qml</file>
+        <file alias="SettingsForm.ui.qml">../qml/SettingsForm.ui.qml</file>
+        <file alias="WorkspaceForm.ui.qml">../qml/WorkspaceForm.ui.qml</file>
+    </qresource>
+</RCC>
