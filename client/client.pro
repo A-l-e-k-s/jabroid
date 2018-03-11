@@ -4,7 +4,7 @@ TARGET = jabroid
 
 include(../qxmpp/qxmpp.pri)
 
-QT += quick
+QT += quick core
 CONFIG += c++11
 
 INCLUDEPATH += $$QXMPP_INCLUDEPATH
@@ -29,7 +29,9 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-SOURCES += src/main.cpp
+SOURCES += src/main.cpp \
+    src/xmpp.cpp \
+    src/settings.cpp
 
 RESOURCES += res/qml.qrc
 
@@ -43,3 +45,8 @@ QML_DESIGNER_IMPORT_PATH =
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+HEADERS += \
+    src/xmpp.h \
+    src/defines.h \
+    src/settings.h
